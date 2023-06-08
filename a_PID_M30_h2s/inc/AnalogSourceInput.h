@@ -51,7 +51,7 @@ public:
             const float multiplier = 0.125F; //GAIN 1
 
             for (int i = 0; i<numReadings; i++) {
-                total = total +m_ads1115->readADC_SingleEnded(0) * multiplier;
+                total = total +m_ads1115->readADC_SingleEnded(1) * multiplier;
             }
             m_lastReadValue = total / numReadings;
 
